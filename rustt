@@ -1,0 +1,19 @@
+#!/bin/bash
+# compile and run test code
+
+if [[ ! "${1#*.}" == "rs" ]]
+then 
+   ME="$(basename "$0")"
+   echo "Usage: $ME rust-source-file.rs"
+   exit 1
+fi
+
+TORUN="$(mktemp -t rustt.XXXXXXXXXX)"
+
+SOURCE="$1"
+shift 1
+
+rustc -L . --test -o "$TORUN" "$SOURCE" \
+   && exec "$TORUN" $@
+
+
