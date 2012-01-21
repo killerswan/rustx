@@ -1,0 +1,6 @@
+#[link(
+   name = "rustx",
+   vers = "1",
+   uuid = "ec9ace30-b7dc-4d66-9cce-a21cc1c06c93",
+   url  = "https://github.com/killerswan/rustx"
+)];
