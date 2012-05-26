@@ -3,3 +3,4 @@ install:
 
 uninstall:
 	-rm /bin/rustx
+

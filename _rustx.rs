@@ -1,7 +1,7 @@
 use std;
 
 fn main () {
-   std::io::println("Hello!");
+   io::println("Hello!");
 }
 
 fn test () {
