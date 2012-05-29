@@ -1,4 +1,4 @@
-use std;
+#!/usr/bin/env rustx
 
 fn main () {
    io::println("Hello!");
