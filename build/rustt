@@ -1,17 +1,28 @@
 #!/bin/bash
-# compile and run test code
 
-if [[ ! "${1#*.}" == "rs" ]]
+usage() {
+   echo "Usage: $(basename "$0") source.rs"
+   echo "Compile and run a Rust program's tests"
+}
+
+SOURCE="$1"
+SOURCE_BASE="$(basename "$SOURCE")"
+
+if [[ ! "${SOURCE_BASE#*.}" == "rs" ]]
 then 
-   ME="$(basename "$0")"
-   echo "Usage: $ME rust-source-file.rs"
+   usage
    exit 1
 fi
 
 TORUN="$(mktemp -t rustt.XXXXXXXXXX)"
 
-SOURCE="$1"
 shift 1
+
+if [[ ! -r "$SOURCE" ]]
+then
+   usage
+   exit 1
+fi
 
 rustc -L . --test -o "$TORUN" "$SOURCE" \
    && exec "$TORUN" $@
