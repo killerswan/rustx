@@ -1,6 +1,6 @@
 #!/usr/bin/env rustx
 
-use std;
+extern mod std;
 
 fn main () {
    io::println("Hello!");
