@@ -5,7 +5,7 @@
    url  = "https://github.com/killerswan/rustx"
 )];
 
-#[crate_type = "lib"];
+#[crate_type = "bin"];
 
 extern mod std;
 
