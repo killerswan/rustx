@@ -9,3 +9,4 @@
 
 extern mod std;
 
+mod _rustx;  // import _rustx.rs

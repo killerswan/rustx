@@ -1,11 +1,14 @@
 #!/usr/bin/env rustx
 
-fn main () {
+fn hi () {
    io::println(~"Hello!");
+}
+
+pub fn main () {
+   hi();
 }
 
 #[test]
 fn test () {
    assert! (2 + 2 == 4);
 }
-
