@@ -1,11 +1,9 @@
-Kevin Cantu
-January-May 2012
+### rustx
 
-rustx    Inspired by `runhaskell`, this script compiles a rust file
-         and runs it immediately.
-         (This can be launched from a source file via `#!/usr/bin/env rustx`, too.)
+* __rustx__: Inspired by `runhaskell`, this script compiles a rust file and runs it immediately.  (This can be launched from a source file via `#!/usr/bin/env rustx`, too.)
+* __rustt__: This script compiles a rust file's tests and runs them.
+* **_rustx**: This is a dummy Rust program...
 
-rustt    This script compiles a rust file's tests and runs them.
+At the moment, this git repo doesn't seem to work quite right with `rustpkg`, but I'll sort that out soon enough!
 
-_rustx   This is a dummy Rust program which allows Cargo to install 
-         it and the scripts.
+-- @killerswan, October 2013

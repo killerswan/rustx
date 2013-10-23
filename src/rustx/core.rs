@@ -13,11 +13,9 @@ fn addition_works () {
 }
 
 #[bench]
-fn bench_sum_1024_ints(b: &mut extra::test::BenchHarness) {
-   use std::vec;
-
-   let v = vec::from_fn(1024, |n| n);
+fn addition_benchmarked (b: &mut extra::test::BenchHarness) {
+   let mut sum = 0;
    do b.iter {
-      v.iter().fold(0, |old, new| old + *new);
+      sum += 1;
    }
 }
