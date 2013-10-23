@@ -4,12 +4,12 @@
 *.o
 *.so
 *.tmp
-.travis.yml
 
 *.dSYM
 .rust
 build
 
+main_test
 src/rustx/core
 src/rustx/main
 

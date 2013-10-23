@@ -1,0 +1,10 @@
+before_install:
+  - yes | sudo add-apt-repository ppa:hansjorg/rust
+  - sudo apt-get update
+install:
+  - sudo apt-get install rust-nightly
+script:
+  - rustc src/rustx/main.rs
+  - rustc --test src/rustx/main.rs -o main_test
+  - ./main_test --bench
+  - ./main_test
