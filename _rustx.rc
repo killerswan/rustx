@@ -1,12 +1,14 @@
 #[link(
    name = "_rustx",
-   vers = "3",
+   vers = "4",
    uuid = "90907b47-80e6-426b-9e18-a0ff5b8632cf",
    url  = "https://github.com/killerswan/rustx"
 )];
 
 #[crate_type = "bin"];
 
-extern mod std;
-
 mod _rustx;  // import _rustx.rs
+
+fn main () {
+   _rustx::hi();
+}
