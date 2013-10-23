@@ -4,6 +4,7 @@
 *.o
 *.so
 *.tmp
+.travis.yml
 
 *.dSYM
 .rust

@@ -7,3 +7,5 @@
 At the moment, this git repo doesn't seem to work quite right with `rustpkg`, but I'll sort that out soon enough!
 
 -- @killerswan, October 2013
+
+[![Build Status](https://travis-ci.org/killerswan/rustx.png)](https://travis-ci.org/killerswan/rustx)
