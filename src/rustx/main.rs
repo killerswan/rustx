@@ -1,3 +1,5 @@
+#[vers = "4.1"];
+
 #[link(
    name = "_rustx",
    vers = "4",
@@ -7,8 +9,4 @@
 
 #[crate_type = "bin"];
 
-mod _rustx;  // import _rustx.rs
-
-fn main () {
-   _rustx::hi();
-}
+mod core;  // import core.rs

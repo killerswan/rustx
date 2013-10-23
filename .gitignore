@@ -4,5 +4,11 @@
 *.o
 *.so
 *.tmp
-_rustx
+
+*.dSYM
+.rust
+build
+
+src/rustx/core
+src/rustx/main
 
