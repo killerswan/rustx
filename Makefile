@@ -1,5 +1,5 @@
 install:
-	cp build/rustx /bin/
+	cp bin/rustx /bin/
 
 uninstall:
 	-rm /bin/rustx
