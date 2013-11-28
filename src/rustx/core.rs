@@ -15,7 +15,5 @@ fn addition_works () {
 #[bench]
 fn addition_benchmarked (b: &mut extra::test::BenchHarness) {
    let mut sum = 0;
-   do b.iter {
-      sum += 1;
-   }
+   b.iter(|| sum += 1)
 }

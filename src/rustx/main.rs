@@ -1,5 +1,3 @@
-#[vers = "4.1"];
-
 #[link(
    name = "_rustx",
    vers = "4",
