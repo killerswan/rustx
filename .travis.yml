@@ -7,5 +7,4 @@ script:
   - rustc        src/rustx/main.rs
   - ./src/rustx/_rustx
   - rustc --test src/rustx/main.rs -o main_test
-  - ./main_test --bench
-  - ./main_test
+  - ./main_test --test --bench
