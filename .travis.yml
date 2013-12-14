@@ -4,7 +4,7 @@ before_install:
 install:
   - sudo apt-get install rust-nightly
 script:
-  - rustc        src/rustx/main.rs
+  - rustc        src/rustx/_rustx.rs
   - ./src/rustx/_rustx
-  - rustc --test src/rustx/main.rs -o main_test
+  - rustc --test src/rustx/_rustx.rs -o main_test
   - ./main_test --test --bench

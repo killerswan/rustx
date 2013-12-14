@@ -1,10 +1,19 @@
-#[link(
-   name = "_rustx",
-   vers = "4",
-   uuid = "90907b47-80e6-426b-9e18-a0ff5b8632cf",
-   url  = "https://github.com/killerswan/rustx"
-)];
+#!/usr/bin/env rustx
 
-#[crate_type = "bin"];
+extern mod extra;
 
-mod core;  // import core.rs
+#[main]
+fn say_hi () {
+   println("Hello!!");
+}
+
+#[test]
+fn addition_works () {
+   assert! (2 + 2 == 4);
+}
+
+#[bench]
+fn addition_benchmarked (b: &mut extra::test::BenchHarness) {
+   let mut sum = 0;
+   b.iter(|| sum += 1)
+}
