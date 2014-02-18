@@ -5,6 +5,6 @@ install:
   - sudo apt-get install rust-nightly
 script:
   - rustc        src/rustx/_rustx.rs
-  - ./src/rustx/_rustx
+  - ./_rustx
   - rustc --test src/rustx/_rustx.rs -o main_test
   - ./main_test --test --bench

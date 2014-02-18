@@ -1,10 +1,10 @@
-#!/usr/bin/env rustx
+extern crate extra;
 
-extern mod extra;
+use std::io;
 
 #[main]
 fn say_hi () {
-   println("Hello!!");
+   io::println("Hello!!");
 }
 
 #[test]
