@@ -10,3 +10,6 @@ At the moment, this git repo doesn't seem to work quite right with `rustpkg`, bu
 
 -- Kevin Cantu, October 2013
 
+### Install
+
+	make install
