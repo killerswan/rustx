@@ -8,6 +8,11 @@ usage() {
 SOURCE="$1"
 SOURCE_BASE="$(basename "$SOURCE")"
 
+if [[ "$SOURCE" == "-" ]]
+then
+   SOURCE="/dev/fd/0"
+fi
+
 if [[ ! -p "$SOURCE" ]] && [[ ! "${SOURCE_BASE#*.}" == "rs" ]]
 then
    usage
